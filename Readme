@@ -1,3 +1,16 @@
+# sudo apt-get install apache2 mysql-client mysql-server
+
+# sudo add-apt-repository ppa:deadsnakes/ppa
+# sudo apt-get update
+# sudo apt-get install python3.6 python3.6-dev
+# curl https://bootstrap.pypa.io/get-pip.py | sudo python3.6
+# pip3.6 install mod_wsgi
+# mod_wsgi-express module-config
+# a2enmod wsgi
+# service apache2 restart
+# pip3.6 install Flask
+# sudo gedit /etc/apache2/sites-available/FlaskApp.conf
+
 # Flask.conf
 
 <VirtualHost *:80>
@@ -17,4 +30,9 @@
         LogLevel warn
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
+# sudo a2ensite FlaskApp
+# service apache2 restart
+
+# mkdir /var/www/FlaskApp
 
